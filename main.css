@@ -1,0 +1,85 @@
+* {
+  font-family: "Arimo", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header h2 {
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #005E54;
+}
+
+.section .dog {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: translateY(20px);
+  display: inline-block;
+}
+.section .dog:hover {
+  color: #005E54;
+  transform: translateY(-10px);
+  transition-duration: 2s;
+}
+.section #dog-img {
+  width: 450px;
+  position: relative;
+  left: 25px;
+  top: 25px;
+  border-radius: 12px;
+  opacity: 0.95;
+  transform: scale(1, 1);
+}
+.section #dog-img:hover {
+  transform: scale(1.05, 1.05);
+  transition-duration: 2s;
+}
+.section p {
+  position: relative;
+  top: 60px;
+  left: 5px;
+}
+
+.section .cat {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: translateY(20px);
+  display: inline-block;
+}
+.section .cat:hover {
+  color: red;
+  transform: translateY(-10px);
+  transition-duration: 2s;
+}
+.section #cat-img {
+  height: 250px;
+  width: 450px;
+  position: relative;
+  left: 25px;
+  top: 25px;
+  border-radius: 12px;
+  opacity: 0.95;
+  transform: scale(1, 1);
+}
+.section #cat-img:hover {
+  transform: scale(1.05, 1.05);
+  transition-duration: 2s;
+}
+
+@media (max-width: 375px) {
+  #container {
+    flex-wrap: wrap;
+  }
+}
